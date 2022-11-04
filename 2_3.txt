@@ -1,0 +1,47 @@
+﻿using System;
+
+namespace Handson2csharp
+{
+    class Reverse
+    {
+
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Enter the string :");
+            string s = Console.ReadLine();
+            int num = 0, i, j;
+            for (i = 0; i < s.Length; i++)
+            {
+                if (s[i] == ' ')
+                {
+                    num = num + 1;
+                }
+            }
+            string sen = "";
+            string rev = "";
+            int l = s.Length;
+            for (i = l - 1; i >= 0; i--)
+            {
+                if (s[i] != ' ')
+                {
+                    rev = rev + s[i];
+                }
+                if (s[i] == ' ' || i == 0)
+
+                {
+                    for (j = rev.Length - 1; j >= 0; j--)
+                    {
+                        sen = sen + rev[j];
+                    }
+                    Console.Write(sen + " ");
+                    sen = "";
+                    rev = "";
+                }
+
+            }
+
+
+        }
+    }
+}

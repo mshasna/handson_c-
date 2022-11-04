@@ -1,0 +1,30 @@
+﻿using System;
+
+namespace Handson2
+{
+    class Program
+    {
+        static void Main()
+        {
+            double x;
+            Console.WriteLine("Enter a Number");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            double sq = FindSquare(x);
+            double cu = FindCube(x);
+            Console.WriteLine($"Square of {x} is {sq}");
+            Console.WriteLine($"Cube of {x} is {cu}");
+        }
+        static double FindSquare(double a)
+        {
+            double sq = a * a;
+            return sq;
+
+        }
+        static double FindCube(double b)
+        {
+            double c = b * b * b;
+            return c;
+        }
+    }
+}

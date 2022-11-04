@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Handson5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int piz, puf, pep, cpiz, cpuf, cpep, tc;
+            float gst, cess, gp;
+            Console.WriteLine("Enter the no of Pizzas ordered:");
+            piz = Convert.ToInt32(Console.In.ReadLine());
+            Console.WriteLine("Enter the no of Puffs ordered:");
+            puf = Convert.ToInt32(Console.In.ReadLine());
+            Console.WriteLine("Enter the no of Pepsi ordered:");
+            pep = Convert.ToInt32(Console.In.ReadLine());
+            cpiz = 200 * pz;
+            cpuf = 40 * pu;
+            cpep = 120 * pe;
+            tc = cz + cu + ce;
+            gst = (12 / 100.00F) * tc;
+            cess = (5 / 100.00F) * tc;
+            gp = gst + cess + tc;
+            Console.WriteLine($"Cost of Pizzas : {cpiz}");
+            Console.WriteLine($"Cost of Puffs : {cpuf}");
+            Console.WriteLine($"Cost of Pepsi : {cpep}");
+            Console.WriteLine($"GST 12% : {gst}");
+            Console.WriteLine($"Cess 5% : {cess}");
+            Console.WriteLine($"Total Price : {tc}");
+            Console.WriteLine($"Gross Price : {gp}");
+        }
+    }
+}
